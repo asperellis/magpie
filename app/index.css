@@ -3,8 +3,8 @@ body {
   padding: 0;
 }
 
-.app {
-  background-color: #fbfaf8;
+:global .app {
+  background-color: goldenrod;
   color: #212121;
   font-family: "jubilat", serif;
   font-style: normal;

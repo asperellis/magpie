@@ -11,7 +11,33 @@ module.exports = {
     module: {
         rules: [
             { test: /\.(js)$/, use: 'babel-loader', exclude: [/node_modules/]},
-            { test: /\.css$/, use: ['style-loader', 'css-loader']},
+            { 
+                test: /\.css$/, 
+                use: [
+                    require.resolve('style-loader'),
+                    {
+                        loader: require.resolve('css-loader'),
+                        options: {
+                            importLoaders: 1,
+                            modules: true,
+                            localIdentName: '[name]__[local]___[hash:base64:5]'
+                        }
+                    },
+                    {
+                        loader: require.resolve('postcss-loader'),
+                        options: {
+                        ident: 'postcss', // https://webpack.js.org/guides/migrating/#complex-options
+                        plugins: () => [
+                            require('postcss-flexbugs-fixes'),
+                            require("postcss-import"),
+                            require("postcss-mixins"),
+                            require("postcss-nested"),
+                            require("postcss-cssnext")
+                        ],
+                        },
+                    }
+                ]
+            },
             { test: /\.jpg$/, use: 'file-loader?name=[name].[ext]', exclude: [/node_modules/]}
         ]
     },
