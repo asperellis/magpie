@@ -1,0 +1,38 @@
+.who {
+  background-color: #757575;
+  color: #fff;
+  position: relative;
+
+  .whoText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5rem;
+    flex: 1 1 auto;
+
+    @media (max-width: 991px) {
+      z-index: 2;
+      padding: 0 1.5rem;
+    }
+  }
+
+  & .whoImg {
+    background-image: url('../images/who.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1 0 auto;
+
+    @media (max-width: 991px) {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 1;
+      opacity: .5;
+      width: auto;
+    }
+  }
+}

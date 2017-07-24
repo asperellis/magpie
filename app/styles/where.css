@@ -1,0 +1,29 @@
+.where {
+  background-color: #d1d1d1;
+  color: #2d2d2d;
+
+  & .whereText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5rem;
+    flex: 1 1 auto;
+
+    @media (max-width: 544px) {
+      padding: 0 1.5rem;
+    }
+  }
+
+  & .whereImg {
+    background-image: url('../images/where.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1 0 auto;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+}

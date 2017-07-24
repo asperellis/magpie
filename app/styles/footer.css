@@ -1,0 +1,18 @@
+.footer {
+  background-color: #191919;
+  color: #fff;
+  align-self: stretch;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #fff;
+}
+
+.footerLogo {
+  @media (max-width: 991px) {
+    display: none;
+  }
+}

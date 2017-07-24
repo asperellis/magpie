@@ -38,7 +38,7 @@ module.exports = {
                     }
                 ]
             },
-            { test: /\.jpg$/, use: 'file-loader?name=[name].[ext]', exclude: [/node_modules/]}
+            { test: /\.(jpg|png)$/, use: 'file-loader?name=[name].[ext]', exclude: [/node_modules/]}
         ]
     },
     devServer: {
