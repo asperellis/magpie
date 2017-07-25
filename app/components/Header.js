@@ -22,7 +22,7 @@ class Header extends Component {
               </span>
             </button>
             <Link to="home" activeClass={styles.active} spy={true} smooth={true} onSetInactive={this.props.collapse} onSetActive={this.props.expand} className={styles.logo}>
-              <img src={logo} className="logo" alt="" width="200" title="" />
+              <img src={logo} alt="Magpie Beverage Solutions" />
             </Link>
             <nav className={[styles.nav, this.props.navOpen ? styles.open : ''].join(' ')}>
                 <Link activeClass={styles.active} to="why" spy={true} smooth={true} duration={500} offset={0} isDynamic={true} onSetActive={this.props.collapse} onClick={this.props.closeNav}>

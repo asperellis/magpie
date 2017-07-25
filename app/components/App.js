@@ -31,7 +31,6 @@ class App extends Component {
     };
 
     collapseHeader() {
-      console.log('c');
       this.setState(function() {
           return {
               collapsed: true
@@ -40,7 +39,6 @@ class App extends Component {
     };
 
     expandHeader() {
-      console.log('ex');
       this.setState(function() {
           return {
               collapsed: false

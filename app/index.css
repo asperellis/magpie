@@ -38,12 +38,16 @@
   * {
     box-sizing: border-box;
   }
-  
+
   html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     font-size: 115%;
+
+    @media (max-width: 544px) {
+      font-size: 100%;
+    }
   }
 
   body {

@@ -6,6 +6,10 @@
   align-items: center;
   flex-direction: column;
   padding: 0 40px 40px 40px;
+
+  @media (max-width: 991px) {
+    padding: 150px 40px;
+  }
 }
 
 .bookingFormContainer {
@@ -14,6 +18,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 991px) {
+    margin-bottom: 40px;
+  }
 }
 
 .calendarIcon {
