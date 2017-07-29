@@ -85,7 +85,7 @@
 .nav a {
   font-weight: 700;
   position: relative;
-  color: #000;
+  color: #fff;
   cursor: pointer;
 
   & + a {
