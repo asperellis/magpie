@@ -91,6 +91,21 @@
   & + a {
     margin-left: 40px;
   }
+
+  & + a.socialIcon:not(.first) {
+    margin-left: 10px;
+  }
+}
+
+.socialIcons {
+  margin-left: 40px;
+  position: relative;
+  top: -3px;
+
+  @media (max-width: 1024px) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 .nav a.active::after {

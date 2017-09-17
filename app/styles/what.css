@@ -46,6 +46,10 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+
+  & p {
+    width: 100%;
+  }
   
   @media (max-width: 991px) {
     padding-top: 5rem;

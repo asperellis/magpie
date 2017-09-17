@@ -2,7 +2,7 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './app/index.js',
+    entry: ['babel-polyfill', './app/index.js'],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index_bundle.js',
@@ -10,7 +10,16 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.(js)$/, use: 'babel-loader', exclude: [/node_modules/]},
+            {   test: /\.(js)$/,
+                use: {
+                    loader: 'babel-loader',
+                    options: { 
+                        presets: ['es2015', 'react'],
+                        plugins: [require('babel-plugin-transform-object-assign')]
+                    }
+                },
+                exclude: [/node_modules/]
+            },
             { 
                 test: /\.css$/, 
                 use: [

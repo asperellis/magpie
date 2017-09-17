@@ -10,7 +10,7 @@ function Who() {
         <div className={styles.whoImg}></div>
         <div className={styles.whoText}>
           <h1>WHO WE ARE</h1>
-          <p>We are young lads with Philadelphia roots hoping to expand the reach of high quality Philly beverages</p>
+          <p>We are young Philadelphians with a vision to bring beer and other delicious beverages to a wider audience.  Lifelong friends who have always shared the passion to create and innovate. We’ve returned to the place the place that molded us together, Philadelphia, melding our expertise, exuberance, and friendship into a thriving company to partner with growing businesses.</p>
           <p>
             <span className="bold">Jason Besecker</span><br/>
             Founder/CEO</p>

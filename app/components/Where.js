@@ -10,7 +10,7 @@ function Where() {
         <div className={styles.whereImg}></div>
         <div className={styles.whereText}>
           <h1>WHERE WE OPERATE</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec blandit mi. Fusce porta nulla ut est finibus vehicula. Suspendisse vehicula purus id placerat ullamcorper. Ut hendrerit ornare ornare. </p>
+          <p>Our boundaries extend 90 miles from Philadelphia, but we are always up for a new adventure.  <a href="mailto:info@magpiebeveragesolutions.com">Let us know</a> if you fall out of these boundaries and want to do a canning run.</p>
         </div>
     </Element>
   );

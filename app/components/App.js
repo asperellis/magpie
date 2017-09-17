@@ -72,8 +72,8 @@ class App extends Component {
                 <Header collapsed={this.state.collapsed} collapse={this.collapseHeader} expand={this.expandHeader} toggleNav={this.toggleMobileNav} closeNav={this.closeMobileNav} navOpen={this.state.navOpen} />
                 <main role="main" className="main">
                     <Home />
-                    <Why />
                     <What />
+                    <Why />
                     <Where />
                     <Who />
                     <Book />

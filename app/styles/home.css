@@ -19,3 +19,11 @@
     padding-top: 110px;
   }
 }
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px 25px;
+}

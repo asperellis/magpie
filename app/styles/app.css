@@ -1,7 +1,5 @@
-.app {
-  &.navOpen {
-    height: 100%;
-    overflow: hidden !important;
-    width: 100%;
-  }
+.app.navOpen {
+  height: 100%;
+  overflow: hidden !important;
+  width: 100%;
 }

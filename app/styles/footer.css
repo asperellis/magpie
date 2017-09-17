@@ -9,6 +9,14 @@
   justify-content: space-between;
   padding-top: 20px;
   border-top: 1px solid #fff;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+}
+
+.socialIcons {
+  margin-top: 20px;
 }
 
 .footerLogo {
