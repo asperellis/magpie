@@ -11,6 +11,7 @@ import Logo from './../images/Logo';
 import FacebookIcon from './../images/Facebook';
 import TwitterIcon from './../images/Twitter';
 import InstagramIcon from './../images/Instagram';
+import Email from './../images/Email';
 
 const Link = Scroll.Link;
 
@@ -50,6 +51,9 @@ function Header(props) {
             </a>
             <a href="https://www.instagram.com/magpiebeverage/" className={styles.socialIcon}>
               <InstagramIcon fill="#ffffff" width="25" height="25" title="Instagram" />
+            </a>
+            <a href="mailto:info@magpiebeveragesolutions.com" className={styles.socialIcon}>
+              <Email fill="#ffffff" width="25" height="25" title="Email" />
             </a>
           </div>
       </nav>

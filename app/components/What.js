@@ -7,27 +7,27 @@ import Truck from './../images/Truck';
 
 const Element = Scroll.Element;
 
-function What() {
+function What(props) {
   return (
     <Element name="what" className={styles.what + " element"}>
       <div className={styles.whatWrapper}>
-        <h1>WHAT WE DO</h1>
-        <p>We are a mobile canning and labeling partnership based out of Philadelphia, PA.  We work with small breweries whose beer is far too good to stay on the tasting room floor.  Our services are not limited to beer and we’re happy to accommodate any small-batch beverage creator. We’ll bring the cans, tops, labels, and everything else you’ll need to can and label your delicious creation. </p>
+        <h1>{props.wpContent.title}</h1>
+        <p>{props.wpContent.description}</p>
         <div className={styles.whatIcons}>
           <div className={styles.whatIcon}>
             <Can fill="#000" width="150" height="150" title={'CANNING'} />
-            <h4>CANNING</h4>
-            <p>Our machine, the Twin Monkey Yampa, has the capability to fill 16oz and 12oz cans</p>
+            <h4>{props.wpContent.can_title}</h4>
+            <p>{props.wpContent.can_description}</p>
           </div>
           <div className={styles.whatIcon}>
             <Bottle fill="#000" width="150" height="150" title={'LABELING'} />
-            <h4>LABELING</h4>
-            <p>We currently have a semi-automatic, “insert name of machine” with the capability to label xx an hour</p>
+            <h4>{props.wpContent.label_title}</h4>
+            <p>{props.wpContent.label_description}</p>
           </div>
           <div className={styles.whatIcon}>
             <Truck fill="#000" width="150" height="150" title={'CONVENIENCE'} />
-            <h4>CONVENIENCE</h4>
-            <p>We’re here to make everything as easy as possible for the brewer. You supply the liquid, and we bring everything else.</p>
+            <h4>{props.wpContent.convenience_title}</h4>
+            <p>{props.wpContent.convenience_description}</p>
           </div>
         </div>
       </div>

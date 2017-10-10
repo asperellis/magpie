@@ -8,28 +8,28 @@ import Recycle from './../images/Recycle';
 
 const Element = Scroll.Element;
 
-function Why() {
+function Why(props) {
   return (
     <Element name="why" className={styles.why + " element elementSplit"}>
         <div className={styles.whyImg}></div>
         <div className={styles.whyText}>
-          <h1>WHY CANS</h1>
+          <h1>{props.wpContent.title}</h1>
           <div className={styles.whyList}>
             <div>
               <Sun fill="#000" width="100" height="100" title={'Sun'} />
-              Less exposure to light prevents the beer from skunking
+              {props.wpContent.sun_description}
             </div>
             <div>
               <Oxygen fill="#000" width="100" height="100" title={'Oxygen'} />
-              Holds a more consistent oxygen level - fresher for longer
+              {props.wpContent.oxygen_description}
             </div>
             <div>
               <Recycle fill="#000" width="100" height="100" title={'Recycle'} />
-              Minimal carbon footprint ~ 60% recyclable
+              {props.wpContent.recycle_description}
             </div>
             <div>
               <BottleBroken fill="#000" width="100" height="100" title={'Broken Bottle'} />
-              Better durability - easier to transport and they don’t break into hundreds of pieces
+              {props.wpContent.bottle_description}
             </div>
           </div>
         </div>

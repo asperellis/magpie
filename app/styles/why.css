@@ -1,7 +1,11 @@
 .why {
-  background-color: #d1d1d1;
+  background-color: #fff;
   color: #2d2d2d;
 
+  @media (max-width: 991px) {
+    padding: 100px 1rem !important;
+  }
+  
   & .whyText {
     display: flex;
     align-items: center;

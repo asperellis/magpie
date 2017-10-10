@@ -7,6 +7,7 @@ import What from './What';
 import Where from './Where';
 import Who from './Who';
 import Book from './Book';
+import DataStore from './../flux/DataStore.js'
 import styles from './../styles/app.css';
 
 const Link = Scroll.Link;
@@ -67,15 +68,16 @@ class App extends Component {
     };
 
     render() {
+        const allData = DataStore.getAll();
         return (
             <div className={[styles.app, this.state.navOpen ? styles.navOpen : ""].join(' ')}>
                 <Header collapsed={this.state.collapsed} collapse={this.collapseHeader} expand={this.expandHeader} toggleNav={this.toggleMobileNav} closeNav={this.closeMobileNav} navOpen={this.state.navOpen} />
                 <main role="main" className="main">
-                    <Home />
-                    <What />
-                    <Why />
-                    <Where />
-                    <Who />
+                    <Home wpContent={DataStore.getPageBySlug('home-2').acf} />
+                    <What wpContent={DataStore.getPageBySlug('what-we-do').acf} />
+                    <Why wpContent={DataStore.getPageBySlug('why-cans').acf} />
+                    <Where wpContent={DataStore.getPageBySlug('where-we-operate').acf} />
+                    <Who wpContent={DataStore.getPageBySlug('who-we-are').acf} />
                     <Book />
                 </main>
             </div>

@@ -1,5 +1,5 @@
 .what {
-  background-color: #fff;
+  background-color: #d1d1d1;
   color: #2d2d2d;
   display: flex;
   align-items: center;
@@ -23,6 +23,7 @@
     border: 5px solid #000;
     border-radius: 50%;
     padding: 25px;
+    background-color: #fff;
   }
 
   & p {

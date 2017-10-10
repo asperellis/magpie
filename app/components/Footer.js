@@ -3,6 +3,7 @@ import styles from './../styles/footer.css';
 import FacebookIcon from './../images/Facebook';
 import TwitterIcon from './../images/Twitter';
 import InstagramIcon from './../images/Instagram';
+import Email from './../images/Email';
 
 function Footer() {
   return (
@@ -19,6 +20,9 @@ function Footer() {
           <a href="https://www.instagram.com/magpiebeverage/" className={styles.socialIcon}>
             <InstagramIcon fill="#ffffff" width="25" height="25" title="Instagram" />
           </a>
+          <a href="mailto:info@magpiebeveragesolutions.com" className={styles.socialIcon}>
+              <Email fill="#ffffff" width="25" height="25" title="Email" />
+            </a>
         </div>
       </div>
     </footer>

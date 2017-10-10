@@ -10,6 +10,13 @@
     }
   }
 
+  button,
+  input[type="button"],
+  *[type="button"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+
   a {
     color: #000;
   }
@@ -142,13 +149,6 @@
   button,
   select {
     text-transform: none;
-  }
-
-  button,
-  html [type="button"],
-  [type="reset"],
-  [type="submit"] {
-    -webkit-appearance: button;
   }
 
   button::-moz-focus-inner,
