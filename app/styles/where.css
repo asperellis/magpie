@@ -20,14 +20,15 @@
   }
 
   & .whereImg {
-    background-image: url('../images/where.jpg');
+    background-image: url('http://magpiebeveragesolutions.com/wp-content/uploads/2017/10/where.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     flex: 1 0 auto;
-
+   
     @media (max-width: 991px) {
-      display: none;
+      height: 250px;
+      box-shadow: 0 -29px 60px 0 #d1d1d1 inset;
     }
   }
 }

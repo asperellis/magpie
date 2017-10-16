@@ -78,7 +78,7 @@ class App extends Component {
                     <Why wpContent={DataStore.getPageBySlug('why-cans').acf} />
                     <Where wpContent={DataStore.getPageBySlug('where-we-operate').acf} />
                     <Who wpContent={DataStore.getPageBySlug('who-we-are').acf} />
-                    <Book />
+                    <Book wpContent={DataStore.getPageBySlug('booking').acf} />
                 </main>
             </div>
         );

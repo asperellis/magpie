@@ -22,7 +22,7 @@
   }
 
   & .whoImg {
-    background-image: url('../images/who.jpg');
+    background-image: url('http://magpiebeveragesolutions.com/wp-content/uploads/2017/10/who.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -35,7 +35,7 @@
       right: 0;
       left: 0;
       z-index: 1;
-      opacity: .5;
+      opacity: .25;
       width: auto;
     }
   }
