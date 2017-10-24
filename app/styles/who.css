@@ -27,6 +27,8 @@
     background-size: cover;
     background-position: center;
     flex: 1 0 auto;
+    height: 100%;
+    width: 50vw;
 
     @media (max-width: 991px) {
       position: absolute;

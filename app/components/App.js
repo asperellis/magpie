@@ -29,7 +29,26 @@ class App extends Component {
         this.closeMobileNav = this.closeMobileNav.bind(this);
         this.collapseHeader = this.collapseHeader.bind(this);
         this.expandHeader = this.expandHeader.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
     };
+
+    componentWillMount() {
+      window.addEventListener('scroll', this.handleScroll);
+    }
+    
+    componentWillUnmount() {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll(event) {
+      let scrollPos = window.scrollY;
+      if(scrollPos > 50 && !this.state.collapsed) {
+        this.collapseHeader();
+      }
+      if(scrollPos < 50 && this.state.collapsed) {
+        this.expandHeader();
+      }
+    }
 
     collapseHeader() {
       this.setState(function() {

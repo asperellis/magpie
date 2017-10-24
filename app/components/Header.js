@@ -18,7 +18,7 @@ const Link = Scroll.Link;
 function Header(props) {
   return (
     <header className={props.collapsed ? styles.headerCollapsed : styles.header}>
-      <button className={[styles.headerNavToggle, props.navOpen ? styles.hamburgerSqueezeOpen : styles.hamburgerSqueeze].join(' ')} type="button" onClick={props.toggleNav}>
+      <button className={[styles.headerNavToggle, props.navOpen ? styles.hamburgerSqueezeOpen : styles.hamburgerSqueeze].join(' ')} type="button" onClick={props.toggleNav} aria-label="Mobile Navigation" role="button">
         <span className={styles.hamburgerBox}>
             <span className={styles.hamburgerInner}></span>
         </span>

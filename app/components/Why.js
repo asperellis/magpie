@@ -5,13 +5,16 @@ import Sun from './../images/Sun';
 import BottleBroken from './../images/BottleBroken';
 import Oxygen from './../images/Oxygen';
 import Recycle from './../images/Recycle';
+import LazyLoad from 'react-lazy-load';
 
 const Element = Scroll.Element;
 
 function Why(props) {
   return (
     <Element name="why" className={styles.why + " element elementSplit"}>
-        <div className={styles.whyImg}></div>
+        <LazyLoad className={'LazyLoad'} offset={500}>
+          <div className={styles.whyImg}></div>
+        </LazyLoad>
         <div className={styles.whyText}>
           <h1>{props.wpContent.title}</h1>
           <div className={styles.whyList}>
