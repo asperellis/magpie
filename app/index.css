@@ -2,6 +2,7 @@
   .element {
     width: auto;
     height: 100vh;
+    min-height: 850px;
 
     @media (max-width: 991px) {
       min-height: 100vh;

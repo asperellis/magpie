@@ -16,6 +16,8 @@
     
     @media (max-width: 544px) {
       padding: 0 1.5rem;
+      min-height: 50vh;
+      height: auto;
     }
   }
 
